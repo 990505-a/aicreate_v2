@@ -59,14 +59,14 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Node.js
-node_modules/
+# Node.js - 只忽略 RSSHub 的 node_modules，其他保留以便开箱即用
+# RSSHub 的 node_modules 太大，克隆后需要自己构建
+rsshub/node_modules/
 npm-debug.log
 yarn-error.log
 .pnpm-debug.log
 
-# RSSHub
-rsshub/node_modules/
+# RSSHub - 构建产物忽略，克隆后需要运行 npm run build
 rsshub/dist/
 rsshub/.cache/
 rsshub/.tmp/
